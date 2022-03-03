@@ -10,11 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2022_03_03_185911) do
+=======
+ActiveRecord::Schema.define(version: 2022_03_03_185013) do
+>>>>>>> ab2f1d8dc22abce77ddcffa2a8324fdb9ac87702
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+<<<<<<< HEAD
   create_table "bookmarks", force: :cascade do |t|
     t.bigint "movie_id", null: false
     t.bigint "list_id", null: false
@@ -24,6 +29,8 @@ ActiveRecord::Schema.define(version: 2022_03_03_185911) do
     t.index ["movie_id"], name: "index_bookmarks_on_movie_id"
   end
 
+=======
+>>>>>>> ab2f1d8dc22abce77ddcffa2a8324fdb9ac87702
   create_table "lists", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
@@ -39,6 +46,7 @@ ActiveRecord::Schema.define(version: 2022_03_03_185911) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+<<<<<<< HEAD
   create_table "reviews", force: :cascade do |t|
     t.bigint "movie_id", null: false
     t.bigint "list_id", null: false
@@ -52,4 +60,6 @@ ActiveRecord::Schema.define(version: 2022_03_03_185911) do
   add_foreign_key "bookmarks", "movies"
   add_foreign_key "reviews", "lists"
   add_foreign_key "reviews", "movies"
+=======
+>>>>>>> ab2f1d8dc22abce77ddcffa2a8324fdb9ac87702
 end
