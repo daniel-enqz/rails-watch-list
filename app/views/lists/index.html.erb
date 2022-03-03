@@ -1,1 +1,10 @@
 <h1>Lists</h1>
+<li>
+<% @lists.each do |list| %>
+  <ul>
+    <%= list.name %>
+    <%= link_to "See details", list_path(list), class: "btn btn-primary"%>
+  </ul>
+<% end %>
+</li>
+<%= link_to "Add List", new_list_path, class: "btn btn-primary"%>
