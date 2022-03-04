@@ -9,10 +9,10 @@
   </video>
 </div>
 
-<div class="main-container">
-  <div class="cards">
+<div class="container">
+  <div class="row row-cols-2 justify-content-center">
     <% @list.bookmarks.each do |bookmark| %>
-      <div class="card" style="width: 18rem;">
+      <div class="card col m-2" style="width: 25rem;">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title"><%= bookmark.movie.title %></h5>
