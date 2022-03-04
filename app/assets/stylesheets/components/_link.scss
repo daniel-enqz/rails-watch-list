@@ -1,0 +1,39 @@
+.link {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    transition: 0.1s ease;
+    font-size: 25px;
+    color: black;
+  }
+}
+
+.add_list_link {
+  text-decoration: none;
+  color: white;
+  &:hover {
+    color: rgb(185, 183, 183);
+  }
+}
+
+.card-remove-link {
+  color: rgb(0, 0, 0);
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  opacity: 0.8;
+  font-weight: lighter;
+  text-decoration: none;
+  &:hover {
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+  }
+}

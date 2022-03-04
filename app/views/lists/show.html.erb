@@ -1,16 +1,22 @@
-<h2>SHOW LIST</h2>
-<%= @list.name %>
+<div class = "banner">
+  <h1> <%= @list.name %></h1>
+  <%= link_to "Back", lists_path, class: "btn btn-secondary back-button-addons"%>
+  <video id="background-video" autoplay loop muted poster="https://github.com/daniel-enqz/rails-watch-list/blob/master/app/assets/images/The%20Most%20Beautiful%20Shots%20In%20Movie%20History.jpg">
+    <source src="https://github.com/daniel-enqz/rails-watch-list/blob/master/app/assets/images/The%20Most%20Beautiful%20Shots%20In%20Movie%20History.mp4" type="video/mp4">
+  </video>
+</div>
 
-<h2>MOVIES</h2>
-<ul class="list-group">
-  <% @list.bookmarks.each do |bookmark| %>
-    <li class="list-group-item">
-      <%= bookmark.movie.title %>
-      <%= bookmark.comment %>
-      <%= link_to 'Delete', bookmark_path(bookmark), method: :delete, data: { confirm: 'Are you sure?' } %>
-    </li>
-  <% end %>
-</ul>
-
-<%= link_to "Back", lists_path, class: "btn btn-secondary"%>
-<%= link_to "Add Movie", new_list_bookmark_path(@list), class: "btn btn-secondary"%>
+<div class="main-container">
+  <div class="cards">
+    <% @list.bookmarks.each do |bookmark| %>
+      <div class="card">
+        <%= bookmark.movie.title %>
+        <%= bookmark.comment %>
+        <%= link_to '&times;'.html_safe, bookmark_path(bookmark), method: :delete, data: { confirm: 'Are you sure?' }  %>
+      </div>
+    <% end %>
+    <div class="card bg-dark">
+      <%= link_to "Add Movie", new_list_bookmark_path(@list), class:"add_list_link" %>
+    </div>
+  </div>
+</div>
