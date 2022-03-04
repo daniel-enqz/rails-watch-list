@@ -1,4 +1,16 @@
 <h2>SHOW LIST</h2>
 <%= @list.name %>
 
+<h2>MOVIES</h2>
+<ul class="list-group">
+  <% @list.bookmarks.each do |bookmark| %>
+    <li class="list-group-item">
+      <%= bookmark.movie.title %>
+      <%= bookmark.comment %>
+      <%= link_to 'Delete', bookmark_path(bookmark), method: :delete, data: { confirm: 'Are you sure?' } %>
+    </li>
+  <% end %>
+</ul>
+
 <%= link_to "Back", lists_path, class: "btn btn-secondary"%>
+<%= link_to "Add Movie", new_list_bookmark_path(@list), class: "btn btn-secondary"%>
