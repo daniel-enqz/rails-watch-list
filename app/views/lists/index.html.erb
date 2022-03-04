@@ -1,19 +1,19 @@
 <div class = "banner">
   <h1>Your Lists</h1>
-  <video id="background-video" autoplay loop muted poster="https://github.com/daniel-enqz/rails-watch-list/blob/master/app/assets/images/The%20Most%20Beautiful%20Shots%20In%20Movie%20History.jpg">
-    <source src="https://github.com/daniel-enqz/rails-watch-list/blob/master/app/assets/images/The%20Most%20Beautiful%20Shots%20In%20Movie%20History.mp4" type="video/mp4">
+  <video class="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+    <source src="<%= video_path "main_banner.mp4" %>" type="video/mp4">
   </video>
 </div>
 
 <div class="main-container">
   <div class="cards">
     <% @lists.each do |list| %>
-      <div class="card">
+      <div class="card-list">
         <%= link_to list.name, list_path(list), class:"link" %>
-        <%= link_to '&times;'.html_safe, list_path(list), method: :delete, class: "card-remove-link"  %>
+        <%= link_to '&times;'.html_safe, list_path(list), method: :delete, class: "card-remove-link",  data: { confirm: 'Are you sure?' } %>
       </div>
     <% end %>
-    <div class="card bg-dark">
+    <div class="card-list bg-dark">
       <%= link_to "Add List", new_list_path, class:"add_list_link" %>
     </div>
   </div>

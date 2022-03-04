@@ -12,25 +12,46 @@
     transform: translate(-50%, -50%);
   }
 
-  .back-button-addons
-  {
-    background-color: black;
-    font-weight: bolder;
+  .banner-buttons {
     position: absolute;
-    border-radius: 10px;
     bottom: 10%;
     right: 5%;
 
-    &:hover{
-      background-color: white;
-      color: white;
-      -webkit-transform: translateY(-3px);
-	    transform: translateY(-3px);
-      transition: ease;
+      .back-button-addons
+    {
+      border: none;
+      background-color: black;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      font-weight: bolder;
+      border-radius: 10px;
+
+      &:hover{
+        background-color: white;
+        color: rgb(0, 0, 0);
+        transform: translateY(-5px);
+        transition: 0.1s ease;
+      }
+    }
+
+    .addbookmark-button-addons
+    {
+      border: none;
+      background-color: rgb(0, 255, 170);
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      font-weight: bolder;
+      border-radius: 10px;
+
+      &:hover{
+        background-color: white;
+        color: rgb(0, 0, 0);
+        transform: translateY(-5px);
+        transition: 0.1s ease;
+      }
     }
   }
 
-  #background-video {
+
+  .background-video {
     width: 100vw;
     height: 50vh;
     object-fit: cover;
