@@ -10,13 +10,15 @@
 </div>
 
 <div class="container">
-  <div class="row row-cols-2 justify-content-center">
+  <div class="row row-cols-2">
     <% @list.bookmarks.each do |bookmark| %>
-      <div class="card col m-2" style="width: 25rem;">
+      <div class="card col m-2" style="width: 35rem;">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title"><%= bookmark.movie.title %></h5>
-          <p class="card-text"><%= bookmark.comment %></p>
+          <h2 class="card-title"><%= bookmark.movie.title %></h2>
+          <h5>⭐<%= bookmark.movie.rating %></h5>
+          <p><%= bookmark.movie.overview %></p>
+          <p class="card-text"><%= bookmark.comment %> ❞</p>
         </div>
       </div>
     <% end %>
