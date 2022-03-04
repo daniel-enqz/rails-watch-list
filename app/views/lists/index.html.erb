@@ -5,12 +5,14 @@
   </video>
 </div>
 
-<li>
+
 <% @lists.each do |list| %>
-  <ul>
+  <div class="card">
     <%= list.name %>
     <%= link_to "See details", list_path(list), class: "btn btn-primary"%>
-  </ul>
+  </div>
 <% end %>
-</li>
+
+
+
 <%= link_to "Add List", new_list_path, class: "btn btn-primary"%>
