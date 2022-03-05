@@ -9,10 +9,11 @@
   </video>
 </div>
 
-<div class="container">
-  <div class="row row-cols-2">
+<div class="category-container">
+  <div class="category-cards">
     <% @list.bookmarks.each do |bookmark| %>
-      <div class="card col m-2" style="width: 35rem;">
+      <div class="category-card m-2">
+         <%= link_to '&times;'.html_safe, bookmark_path(bookmark), method: :delete, class: "card-remove-link",  data: { confirm: 'Are you sure?' } %>
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
           <div class="d-flex align-center">
