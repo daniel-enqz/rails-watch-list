@@ -24,13 +24,13 @@
 }
 
 // CATEGORY CARDS LAYOUT
-.category-cards {
-  display: grid;
-  flex-grow: 1;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 16px;
-  margin: 40px;
-}
+// .category-cards {
+//   display: grid;
+//   flex-grow: 1;
+//   grid-template-columns: 1fr 1fr 1fr 1fr;
+//   grid-gap: 16px;
+//   margin: 40px;
+// }
 
 
 // MEDIA QUERIES
@@ -38,16 +38,10 @@
   .list-cards {
     grid-template-columns: 1fr 1fr;
   }
-  .category-cards {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 @media(max-width: 768px) {
   .list-cards {
-    grid-template-columns: 1fr;
-  }
-  .category-cards {
     grid-template-columns: 1fr;
   }
 }
