@@ -6,5 +6,7 @@ require 'json'
   uri = URI(url)
   response = Net::HTTP.get(uri)
   repos = JSON.parse(response)
-  Movie.create(title: repos["title"], overview: repos["overview"], rating: repos["popularity"])
+  # IMAGE FETCH PROCESS
+  poster_url = "https://image.tmdb.org/t/p/w300#{repos['poster_path']}"
+  Movie.create(title: repos["title"], overview: repos["overview"], rating: repos["popularity"], poster_url: poster_url)
 end

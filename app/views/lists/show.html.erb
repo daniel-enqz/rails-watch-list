@@ -9,21 +9,23 @@
   </video>
 </div>
 
-<div class="category-container">
-  <div class="category-cards">
-    <% @list.bookmarks.each do |bookmark| %>
-      <div class="category-card m-2">
-         <%= link_to '&times;'.html_safe, bookmark_path(bookmark), method: :delete, class: "card-remove-link",  data: { confirm: 'Are you sure?' } %>
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <div class="d-flex align-center">
-            <div><h2 class="card-title"><%= bookmark.movie.title %></h2></div>
-            <div><h5>⭐<%= bookmark.movie.rating %></h5></div>
+<div class="category-cards">
+  <% @list.bookmarks.each do |bookmark| %>
+    <div class="flip-card m-2">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="<%= image_path "#{bookmark.movie.poster_url}" %>" alt="...">
+        </div>
+        <div class="flip-card-back">
+          <%= link_to 'delete', bookmark_path(bookmark), method: :delete, class: "card-remove-link",  data: { confirm: 'Are you sure?' } %>
+          <div class="card-body">
+            <h4 class="card-title"><%= bookmark.movie.title %></h4>
+            <h5>⭐<%= bookmark.movie.rating %></h5>
+            <p><%= bookmark.movie.overview %></p>
+            <p class="card-text"><%= bookmark.comment %> ❞</p>
           </div>
-          <p><%= bookmark.movie.overview %></p>
-          <p class="card-text"><%= bookmark.comment %> ❞</p>
         </div>
       </div>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
 </div>
