@@ -15,8 +15,10 @@
       <div class="card col m-2" style="width: 35rem;">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
-          <h2 class="card-title"><%= bookmark.movie.title %></h2>
-          <h5>⭐<%= bookmark.movie.rating %></h5>
+          <div class="d-flex align-center">
+            <div><h2 class="card-title"><%= bookmark.movie.title %></h2></div>
+            <div><h5>⭐<%= bookmark.movie.rating %></h5></div>
+          </div>
           <p><%= bookmark.movie.overview %></p>
           <p class="card-text"><%= bookmark.comment %> ❞</p>
         </div>
