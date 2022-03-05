@@ -17,7 +17,7 @@
           <img src="<%= image_path "#{bookmark.movie.poster_url}" %>" alt="...">
         </div>
         <div class="flip-card-back">
-          <%= link_to 'delete'.html_safe, bookmark_path(bookmark), method: :delete, class: "category-remove-link",  data: { confirm: 'Are you sure?' } %>
+          <%= link_to 'delete', list_bookmark_path(bookmark), method: :delete, class: "category-remove-link",  data: { confirm: 'Are you sure?' } %>
           <div class="card-body">
             <h4 class="card-title"><%= bookmark.movie.title %></h4>
             <p><%= bookmark.movie.overview %></p>
