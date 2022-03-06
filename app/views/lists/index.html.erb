@@ -8,7 +8,7 @@
 <div class="main-container">
   <div class="list-cards">
     <% @lists.each do |list| %>
-      <div class="list-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path list.photo.key, height: 300, crop: :fill %>')">
+      <div class="list-card" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,1)), url('<%= cl_image_path list.photo.key, height: 300, crop: :fill %>')">
         <%= link_to list.name, list_path(list), class:"link" %>
         <%= link_to '&times;'.html_safe, list_path(list),  method: :delete, class: "card-remove-link", data: { confirm: 'Are you sure?' } %>
       </div>

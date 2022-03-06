@@ -54,6 +54,7 @@
 
       &:hover{
         background-color: white;
+        box-shadow: 0 4px 10px rgb(255, 255, 255);
         color: rgb(0, 0, 0);
         transform: translateY(-5px);
         transition: 0.1s ease;
@@ -78,7 +79,8 @@
   }
 
   img {
-    max-height:100%;
+    height: fit-content;
+    max-height: 100%;
   }
 }
 
@@ -98,6 +100,8 @@
       }
 
       img {
+        height: fit-content;
+        max-height: 100%;
         width: fit-content;
         max-width: 100%;
       }

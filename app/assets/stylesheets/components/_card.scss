@@ -9,7 +9,7 @@
 
 .list-card {
   position: relative;
-  opacity: 0.7;
+  opacity: 0.9;
   background-size: cover;
   background-position: center;
   height: 150px;
@@ -39,5 +39,9 @@
 @media(max-width: 768px) {
   .list-cards {
     grid-template-columns: 1fr;
+  }
+
+  .category-cards {
+    justify-content: center;
   }
 }
