@@ -32,9 +32,9 @@
   font-weight: lighter;
   text-decoration: none;
   &:hover {
-    color: white;
-    text-decoration: none;
-    opacity: 1;
+    transition: 0.1s ease;
+    font-size: 17px;
+    color: aliceblue;
   }
 }
 
