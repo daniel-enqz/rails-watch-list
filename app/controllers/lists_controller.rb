@@ -15,7 +15,7 @@ class ListsController < ApplicationController
     @list = List.new(list_params)
 
     if @list.save
-      redirect_to @list, notice: 'List was successfully created.'
+      redirect_to root_path, notice: 'List was successfully created.'
     else
       render :new
     end
@@ -25,7 +25,7 @@ class ListsController < ApplicationController
     @list = List.find(params[:id])
     @list.destroy
 
-    redirect_to @list, notice: 'List was successfully destroyed.'
+    redirect_to root_path, notice: 'List was successfully destroyed.'
   end
 
   private
