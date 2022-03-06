@@ -4,9 +4,7 @@
     <%= link_to "Add Bookmark", new_list_bookmark_path(@list), class: "btn btn-secondary addbookmark-button-addons" %>
     <%= link_to "My Lists🍿", root_path, class: "btn btn-secondary back-button-addons"%>
   </div>
-  <video class="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
-    <source src="<%= video_path "main_banner.mp4" %>" type="video/mp4">
-  </video>
+  <%= cl_image_tag @article.photo.key, height: 300, width: 400, crop: :fill %>
 </div>
 
 <div class="d-flex flex-wrap">
