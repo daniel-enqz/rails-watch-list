@@ -10,7 +10,7 @@
     <% @lists.each do |list| %>
       <div class="list-card">
         <%= link_to list.name, list_path(list), class:"link" %>
-        <%= link_to '&times;'.html_safe, list_path(list), class: "card-remove-link", method: :delete, data: { confirm: 'Are you sure?' } %>
+        <%= link_to '&times;'.html_safe, list_path(list),  method: :delete, class: "card-remove-link", data: { confirm: 'Are you sure?' } %>
       </div>
     <% end %>
     <div class="list-card bg-dark">
