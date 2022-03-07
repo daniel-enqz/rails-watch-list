@@ -9,3 +9,10 @@
     margin-right: 15px;
   }
 }
+
+.blur-navbar {
+  background-color: transparent;
+  transition: 0.5s background-color ease;
+  // filter: blur(8px);
+  // -webkit-filter: blur(8px);
+}
