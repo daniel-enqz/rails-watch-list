@@ -11,8 +11,8 @@ Users can create thier own custom categories
 
 Users can see thier favourite categories and add their favourite movies from a Database (Using Movie API)
 ![image](https://user-images.githubusercontent.com/72522628/161292604-6bf517a6-73f8-4155-99c3-26b6d689e791.png)
-![image](https://user-images.githubusercontent.com/72522628/161292722-d5205c2b-8c47-4bc3-9485-f0a1c35880ed.png)
-![image](https://user-images.githubusercontent.com/72522628/161292785-2205e133-04ab-400c-b48b-52b6d173434a.png)
+![image](https://user-images.githubusercontent.com/72522628/161293175-57c7ec10-8bb1-4db4-ac97-6a8bad557e3f.png)
+![image](https://user-images.githubusercontent.com/72522628/161293207-96a2c8ca-0f54-4bd1-b01e-cfd71ca4bf20.png)
 
 ## Setup
 
