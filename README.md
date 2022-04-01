@@ -13,7 +13,11 @@ Users can see thier favourite categories and add their favourite movies from a D
 ![image](https://user-images.githubusercontent.com/72522628/161292604-6bf517a6-73f8-4155-99c3-26b6d689e791.png)
 ![image](https://user-images.githubusercontent.com/72522628/161293207-96a2c8ca-0f54-4bd1-b01e-cfd71ca4bf20.png)
 ![image](https://user-images.githubusercontent.com/72522628/161293175-57c7ec10-8bb1-4db4-ac97-6a8bad557e3f.png)
+Things you may want to cover to initialize this project:
+Versions
 
+    3.0.3p157 (2021-11-24 revision 3fb7d2cadc) [x86_64-linux]
+    6.1.4.6
 ## Setup
 
 ```shell
