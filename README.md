@@ -13,3 +13,15 @@ Users can see thier favourite categories and add their favourite movies from a D
 ![image](https://user-images.githubusercontent.com/72522628/161292604-6bf517a6-73f8-4155-99c3-26b6d689e791.png)
 ![image](https://user-images.githubusercontent.com/72522628/161292722-d5205c2b-8c47-4bc3-9485-f0a1c35880ed.png)
 ![image](https://user-images.githubusercontent.com/72522628/161292785-2205e133-04ab-400c-b48b-52b6d173434a.png)
+
+## Setup
+
+```shell
+ git clone git@github.com:daniel-enqz/rails-watch-list.git
+ cd rails-watch-list
+ rails db:create db:migrate db:seed:replant
+ bundle install
+ yarn install
+ rails server
+```
+Open you browser and visit `localhost:3000`
