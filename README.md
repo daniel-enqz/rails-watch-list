@@ -1,9 +1,5 @@
 # MOVIE WATCH LIST
 ## RAILS APP WHERE USERS CAN CREATE LISTS OF THEIR FAVOURITE MOVIES
-## Things you may want to cover to initialize this project:
-* Ruby and Rails version
--ruby 3.0.3p157 (2021-11-24 revision 3fb7d2cadc) [x86_64-linux]
--Rails 6.1.4.6
 ![image](https://user-images.githubusercontent.com/72522628/161292221-a70898e0-9be3-41ab-b5f7-0a4476ca46cf.png)
 
 Users can create thier own custom categories
