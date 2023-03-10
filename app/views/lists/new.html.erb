@@ -14,3 +14,11 @@
     <% end %>
   </div>
 </div>
+
+
+<%= simple_form_for(@list) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :photo, as: :file %>
+  <%= link_to "Cancel", :back %>
+  <%= f.button :submit, class:"btn btn-outline-dark" %>
+<% end %>
